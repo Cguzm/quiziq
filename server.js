@@ -14,22 +14,22 @@ dotenv.config({ path: './config.env' });
 const app = require('./app');
 
 // DATABASE PASSWORD
-const DB = process.env.DATABASE.replace(
-  '<PASSWORD>',
-  process.env.DATABASE_PASSWORD
-);
+// const DB = process.env.DATABASE.replace(
+//   '<PASSWORD>',
+//   process.env.DATABASE_PASSWORD
+// );
 
 // DATABASE CONFIG
-mongoose
-  .connect(DB, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true
-  })
-  .then(() => {
-    console.log('DB connection successful!');
-  });
+// mongoose
+//   .connect(DB, {
+//     useNewUrlParser: true,
+//     useCreateIndex: true,
+//     useFindAndModify: false,
+//     useUnifiedTopology: true
+//   })
+//   .then(() => {
+//     console.log('DB connection successful!');
+//   });
 
 // SERVER INITIALIZER
 const port = process.env.PORT || 8000;

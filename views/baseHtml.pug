@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        block head
+            meta(chardet='UTF-8')
+            meta(name='viewport' content='width=device-width, initial-scale=1.0')
+            link(rel='stylesheet' href='/css/style.css')
+            link(rel='shortcut icon' type='image/png' href='#')
+            link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Lato:300,300i,700')           
+            link(rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css')            
+            title QuizIQ | #{title}
+
+    body.body
+        // HEADER
+        include _header
+
+        // CONTENT
+        block content
+            h1 This is a placeholder
+        
+        // FOOTER
+        include _footer  

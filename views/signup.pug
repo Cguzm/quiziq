@@ -1,0 +1,22 @@
+extends baseHtml
+
+block content
+
+    main.main
+        .ui.segment.form-signup
+            h1 Create your account
+            .ui.form
+                .four.fields
+                .field
+                    label Name
+                    input(placeholder='Name' type='text')
+                .field
+                    label Email
+                    input(placeholder='Email' type='email')
+                .field
+                    label Password
+                    input(placeholder='Password' type='password')
+                .field
+                    label Password Confirm
+                    input(placeholder='Password confirm' type='password')        
+                .ui.submit.button Submit
