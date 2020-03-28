@@ -9,3 +9,15 @@ exports.getSignUpPage = (req, res, next) => {
     title: 'Create your account'
   });
 };
+
+exports.getLoginPage = (req, res, next) => {
+  res.status(200).render('login', {
+    title: 'Login to your account'
+  });
+};
+
+exports.getPlayGame = async (req, res, next) => {
+  res.status(200).render('play', {
+    title: 'Play game'
+  });
+};

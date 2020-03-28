@@ -53,6 +53,7 @@ body.body {
 
 .main {
   background-color: #f7f7f7;
+  /* background-color: green; */
   padding: 8rem 6rem;
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -136,4 +137,25 @@ body.body {
   text-transform: uppercase;
   border: none;
   display: table;
+}
+
+#question_segment {
+  margin-bottom: 0;
+  border-radius: 0px 0px;
+  padding: 5rem 7rem;
+}
+
+.btn-ans {
+  width: 46%;
+  background: teal;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  float: left;
+  margin: 1.66%;
+  border-radius: 5px;
+}
+
+#container-btn {
+  max-width: 500px;
+  margin: 0 auto;
 }

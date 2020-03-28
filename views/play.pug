@@ -1,0 +1,21 @@
+extends baseHtml
+
+block content
+
+    main.main
+        .ui.placeholder.inverted.segment#question_segment
+            .content 
+                h2#header
+                .description
+                    h4#question
+                    span LEVEL OF DIFFICULTY : 
+                    p#level   
+            .ui.inverted.segment     
+                #container-btn
+                    .btn-ans#ans_a.btn
+                    .btn-ans#ans_b
+                    .btn-ans#ans_c 
+                    .btn-ans#ans_d 
+            .ui.inverted.segment
+                #container-btn
+                    #playBtn.ui.inverted.teal.button Play again!        

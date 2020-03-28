@@ -1,0 +1,15 @@
+extends baseHtml
+
+block content
+    main.main
+        .ui.segment.form-signup
+            h1 Log into your account
+            .ui.form
+                .two.fields
+                .field
+                    label Email
+                    input(placeholder='Email' type='email')
+                .field
+                    label Password
+                    input(placeholder='Password' type='password')       
+                .ui.submit.button Login 

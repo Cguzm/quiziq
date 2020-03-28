@@ -31,8 +31,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 //   res.render('signup');
 // });
 
-// MOUNT ROUTES
+// app.get('/login', (req, res, next) => {
+//   res.status(200).render('login');
+// });
 
+// app.get('/play', (req, res, next) => {
+//   res.status(200).render('game');
+// });
+
+// MOUNT ROUTES
 app.use('/', viewRouter);
 
 module.exports = app;
